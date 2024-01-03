@@ -1,2 +1,0 @@
-# OIBSIP-Level-1-Task-1
-I designed a landing page website dedicated to Tic Tac, my favorite snack. During this project, I honed my skills in HTML and CSS, incorporating various design elements such as section divisions, padding, margins, item arrangement, headers, and footers. These skills not only enhanced the webpage's effectiveness but also contributed to its visual appeal. I'm enthusiastic about sharing this project on GitHub to showcase my progress and contribute to the web development community.
