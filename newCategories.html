@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Awaiz Clothing</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">   
+<!-- ####################################################################################### EGE-  iki adet .css dosyası eklendi -->
+<link rel="stylesheet" type="text/css" href="styles/slider.css">   
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+
+<div class="super_container">
+
+<!-- REQUIRED FOR ALL PAGES -->
+    <!-- ADMIN PANEL -->
+	<header class="header trans_300" style="height: 0;">
+        <div class="main_nav_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <div class="logo_container">
+                            <a href="index.html" style="color:white">Outfi<span>TR</span></a>
+                        </div>
+                        <nav class="navbar">
+                            <ul class="navbar_menu" style="margin-top: -15px;">
+                                <li><a href="index.html" style="color:white; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">HOME</a></li>
+                                <li><a href="categories.html" style="color:white; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">SHOP</a></li>
+                                <li><a href="contact.html" style="color:white; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">CONTACT</a></li>
+                            </ul>
+                            <ul class="navbar_user" style="margin-top: -15px;">
+                                <li><a href="#"><i class="fa fa-search"  style="color:white" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-user" style="color:white " aria-hidden="true"></i></a></li>
+                                <li class="checkout">
+                                    <a href="card.html">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span id="checkout_items" class="checkout_items"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- END OF REQUIRED FOR ALL PAGES -->
+
+    <div class="fs_menu_overlay"></div>
+
+    <div class="container product_section_container">
+        <div class="row">
+            <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="newCategories.html.html"><i class="fa fa-angle-right" aria-hidden="true"></i>New Arrivals</a></li>
+                </ul>
+            </div>
+
+            <!-- Product Category -->
+
+            <div class="sidebar">
+                <div class="sidebar_section">
+                    <div class="sidebar_title">
+                        <h5>Product Category</h5>
+                    </div>
+                    <ul class="sidebar_categories">
+                        <li><a href="manCategories.html">Men</a></li>
+                        <li><a href="categories.html"><span><i aria-hidden="true"></i></span>Women</a></li>
+                        <li><a href="aksCategories.html">Accessories</a></li>
+                        <li class="active"><a href="newCategories.html"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Size -->
+                    <div class="sidebar_section">
+                        <div class="sidebar_title">
+                            <h5>Size</h5>
+                        </div>
+                        <ul class="checkboxes">
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>S</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>M</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>L</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>XL</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>XXL</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Color -->
+                    <div class="sidebar_section">
+                        <div class="sidebar_title">
+                            <h5>Color</h5>
+                        </div>
+                        <ul class="checkboxes">
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Black</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Pink</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+                        </ul>
+                        <div class="show_more">
+                            <span><span>+</span>Show More</span>
+                        </div>
+                    </div>
+                    <!--Shoe Size-->
+                    <div class="sidebar_section">
+                        <div class="sidebar_title">
+                            <h5>Shoe Size</h5>
+                        </div>
+                        <ul class="checkboxes">
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>37</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>38</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>39</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>40</span></li>
+                            <li><i class="fa fa-square-o" aria-hidden="true"></i><span>41</span></li>
+                        </ul>
+                        <div class="show_more">
+                            <span><span>+</span>Show More</span>
+                        </div>
+                    </div>
+
+            </div>
+
+
+                <!-- Main Content -->
+
+                <div class="main_content">
+
+                    <!-- Products -->
+
+                    <div class="products_iso">
+                        <div class="row">
+                            <div class="col">
+
+                                <!-- Recommended Sorting -->
+
+                                <div class="product_sorting_container product_sorting_container_top">
+                                    <ul class="product_sorting">
+                                        <li>
+                                            <span class="type_sorting_text">Default Sorting</span>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="sorting_type">
+                                                <li class="type_sorting_btn" ><span>Default Sorting</span></li>
+                                                <li class="type_sorting_btn" ><span>Price: Low to High</span></li>
+                                                <li class="type_sorting_btn" ><span>Price: High to Low</span></li>
+                                                <li class="type_sorting_btn" ><span>Product Name</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Show</span>
+                                            <span class="num_sorting_text">6</span>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="sorting_num">
+                                                <li class="num_sorting_btn"><span>6</span></li>
+                                                <li class="num_sorting_btn"><span>12</span></li>
+                                                <li class="num_sorting_btn"><span>24</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="pages d-flex flex-row align-items-center">
+                                        <div class="page_current">
+                                            <span>1</span>
+                                            <ul class="page_selection">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="page_total"><span></span> 3</div>
+                                        <div id="next_page" class="page_next"><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Product Grid -->
+
+                                <div class="product-grid">
+
+                                    <!-- Product 1 -->
+
+                                    <div class="product-item men">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_1.png" alt="">
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-20AED</span></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Purple Hoodie</a></h6>
+                                                <div class="product_price">110 AED<span>130 AED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 2 -->
+
+                                    <div class="product-item women">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_2.png" alt="">
+                                            </div>
+                                            <div class="favorite"></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Green Orange Handbag</a></h6>
+                                                <div class="product_price">90 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 3 -->
+
+                                    <div class="product-item women">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_3.png" alt="">
+                                            </div>
+                                            <div class="favorite"></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Yellow Furry Sweater</a></h6>
+                                                <div class="product_price">100 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 4 -->
+
+                                    <div class="product-item accessories">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_4.png" alt="">
+                                            </div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Green Sports Bag</a></h6>
+                                                <div class="product_price">150 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 5 -->
+
+                                    <div class="product-item women men">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_5.png" alt="">
+                                            </div>
+                                            <div class="favorite"></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Light Brown Shoes</a></h6>
+                                                <div class="product_price">180 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 6 -->
+
+                                    <div class="product-item accessories">
+                                        <div class="product discount product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_6.png" alt="">
+                                            </div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-40AED</span></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="#single.html">Black Sunglasses</a></h6>
+                                                <div class="product_price">60 AED<span>100 AED</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 7 -->
+
+                                    <div class="product-item women">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_7.png" alt="">
+                                            </div>
+                                            <div class="favorite"></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Dark Orange Sweater</a></h6>
+                                                <div class="product_price">120 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 8 -->
+
+                                    <div class="product-item accessories">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_8.png" alt="">
+                                            </div>
+                                            <div class="favorite"></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Brown Wallet</a></h6>
+                                                <div class="product_price">80 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 9 -->
+
+                                    <div class="product-item men">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_9.png" alt="">
+                                            </div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="favorite favorite_left"></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Brown Leather Coat</a></h6>
+                                                <div class="product_price">110 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+
+                                    <!-- Product 10 -->
+
+                                    <div class="product-item men">
+                                        <div class="product product_filter">
+                                            <div class="product_image">
+                                                <img src="images/product_10.png" alt="">
+                                            </div>
+                                            <div class="favorite"></div>
+                                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+                                            <div class="product_info">
+                                                <h6 class="product_name"><a href="single.html">Green T-Shirt</a></h6>
+                                                <div class="product_price">100 AED</div>
+                                            </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+                                    </div>
+                                </div>
+
+                                <!-- Product Sorting -->
+
+                                <div class="product_sorting_container product_sorting_container_bottom clearfix">
+                                    <ul class="product_sorting">
+                                        <li>
+                                            <span>Show</span>
+                                            <span class="num_sorting_text">04</span>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="sorting_num">
+                                                <li class="num_sorting_btn"><span>01</span></li>
+                                                <li class="num_sorting_btn"><span>02</span></li>
+                                                <li class="num_sorting_btn"><span>03</span></li>
+                                                <li class="num_sorting_btn"><span>04</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <span class="showing_results">Showing 12 results from pages 1-3</span>
+                                    <div class="pages d-flex flex-row align-items-center">
+                                        <div class="page_current">
+                                            <span>1</span>
+                                            <ul class="page_selection">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="page_total"><span></span> 3</div>
+                                        <div id="next_page_1" class="page_next"><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+
+<!-- Benefits -->
+
+<div class="benefit">
+    <div class="container">
+        <div class="row benefit_row">
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Free Shipping</h6>
+                        <p>Free shipping on orders over 100 AED.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Fast Delivery</h6>
+                        <p>Your order will reach you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>45-Day Return</h6>
+                        <p>You can return your product within 45 days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Open Every Day</h6>
+                        <p>08:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Bülten -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+						<h4>Newsletter</h4>
+						<p>Subscribe to our newsletter and get 20% off your first purchase.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+							<input id="newsletter_email" type="email" placeholder="Email" required="required" data-error="Valid email is required.">
+							<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Altbilgi -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer_nav_container">
+					<div class="cr">© Copyright 2025. Made by Awaiz Ahmed <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="#"></a>  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="js/categories_custom.js"></script>
+</body>
+</html>

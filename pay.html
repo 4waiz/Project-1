@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Awaiz Clothing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles//style.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/allResponsive.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/allResponsive.css">   
+    <!-- ####################################################################################### EGE-  iki adet .css dosyası eklendi -->
+    <link rel="stylesheet" type="text/css" href="styles/slider.css">   
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+    <div class="super_container">
+<!-- REQUIRED FOR ALL PAGES-->
+            <!-- ADMIN PANEL -->
+            <header class="header trans_300" style="height: 0;">
+                <div class="main_nav_container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <div class="logo_container">
+                                    <a href="index.html" style="color:white">awaiz<span>clothing</span></a>
+                                </div>
+                                <nav class="navbar">
+                                    <ul class="navbar_menu" style="margin-top: -15px;">
+                                        <li><a href="index.html" style="color:white; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">HOME</a></li>
+                                        <li><a href="categories.html" style="color:white; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">SHOP</a></li>
+                                        <li><a href="contact.html" style="color:white; font-size: 20px ; font-family:Cormorant Garamond, Georgia, serif;">CONTACT</a></li>
+                                    </ul>
+                                    <ul class="navbar_user" style="margin-top: -15px;">
+                                        <li><a href="#"><i class="fa fa-search"  style="color:white" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-user" style="color:white " aria-hidden="true"></i></a></li>
+                                        <li class="checkout">
+                                            <a href="card.html">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                <span id="checkout_items" class="checkout_items"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+                <!-- END OF REQUIRED FOR ALL PAGES-->
+        
+                <!--Page Content-->
+                <div class="site-blocks-table">
+                    <div class="site-section">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-5 mb-md-0">
+                            <h2 class="h3 mb-3 text-black">Billing Details</h2>
+                            <div class="p-3 p-lg-5 border">
+                                <div class="form-group">
+                                <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
+                                <select id="c_country" class="form-control">
+                                    <option value="1">Select a country</option>    
+                                    <option value="2">Turkey</option>    
+                                    <option value="3">United States</option>    
+                                    <option value="4">Russia</option>    
+                                    <option value="5">China</option>    
+                                    <option value="6">Italy</option>    
+                                    <option value="7">Spain</option>    
+                                    <option value="8">Bulgaria</option>    
+                                    <option value="9">Greece</option>    
+                                </select>
+                                </div>
+                                <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_fname" name="c_fname">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_lname" name="c_lname">
+                                </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_companyname" class="text-black">Company Name </label>
+                                    <input type="text" class="form-control" id="c_companyname" name="c_companyname">
+                                </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street name">
+                                </div>
+                                </div>
+                
+                                <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Apartment, suite, unit number (optional)">
+                                </div>
+                
+                                <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_state_country" class="text-black">City <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_state_country" name="c_state_country">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_postal_zip" class="text-black">Postal Code <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
+                                </div>
+                                </div>
+                
+                                <div class="form-group row mb-5">
+                                <div class="col-md-6">
+                                    <label for="c_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
+                                </div>
+                            </div>
+                
+                
+                                <div class="form-group">
+                                <label for="c_ship_different_address" class="text-black" data-toggle="collapse" href="#ship_different_address" role="button" aria-expanded="false" aria-controls="ship_different_address"><input type="checkbox" value="1" id="c_ship_different_address">Ship to different address?</label>
+                                <div class="collapse" id="ship_different_address">
+                                    <div class="py-2">
+                                        <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
+                                        <select id="c_country" class="form-control">
+                                            <option value="1">Select a country</option>    
+                                            <option value="2">Turkey</option>    
+                                            <option value="3">United States</option>    
+                                            <option value="4">Russia</option>    
+                                            <option value="5">China</option>    
+                                            <option value="6">Italy</option>    
+                                            <option value="7">Spain</option>    
+                                            <option value="8">Bulgaria</option>    
+                                            <option value="9">Greece</option>    
+                                        </select>
+                                        </div>
+                                        <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_fname" name="c_fname">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_lname" name="c_lname">
+                                        </div>
+                                        </div>
+                        
+                                        <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="c_companyname" class="text-black">Company Name </label>
+                                            <input type="text" class="form-control" id="c_companyname" name="c_companyname">
+                                        </div>
+                                        </div>
+                        
+                                        <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street name">
+                                        </div>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Apartment, suite, unit number (optional)">
+                                        </div>
+                        
+                                        <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <label for="c_state_country" class="text-black">City <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_state_country" name="c_state_country">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="c_postal_zip" class="text-black">Postal Code <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
+                                        </div>
+                                        </div>
+                        
+                                        <div class="form-group row mb-5">
+                                        <div class="col-md-6">
+                                            <label for="c_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+                                </div>
+                
+                                <div class="form-group">
+                                <label for="c_order_notes" class="text-black">Order Notes</label>
+                                <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
+                                </div>
+                
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                
+                                <div class="row mb-5">
+                                    <div class="col-md-12">
+                                        <h2 class="h3 mb-3 text-black">Coupon Code</h2>
+                                        <div class="p-3 p-lg-5 border">
+                                            <label for="c_code" class="text-black mb-3">Enter your coupon code if you have one</label>
+                                            <div class="d-flex align-items-start">  <!-- Changed to align-items-start -->
+                                                <div class="flex-grow-1 mr-2">
+                                                    <input type="text" class="form-control" id="c_code" placeholder="Coupon code">
+                                                </div>
+                                                <button class="btn btn-danger btn-sm px-4 mt-n1" type="button" id="button-addon2">APPLY</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <div class="row mb-5">
+                                <div class="col-md-12">
+                                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                                <div class="p-3 p-lg-5 border">
+                                    <table class="table site-block-order-table mb-5">
+                                    <thead>
+                                        <th>Product</th>
+                                        <th>Total</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>Faux Leather Jacket <strong class="mx-2">x</strong> 1</td>
+                                        <td>180 AED</td>
+                                        </tr>
+                                        <tr>
+                                        <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
+                                        <td class="text-black">180 AED </td>
+                                        </tr>
+                                        <tr>
+                                        <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                                        <td class="text-black font-weight-bold"><strong>180 AED</strong></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                
+                                    <div class="border p-3 mb-3">
+                                    <h3 class="h6 mb-0"><a class="d-block text-danger" data-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a></h3>
+                
+                                    <div class="collapse" id="collapsebank">
+                                        <div class="py-2">
+                                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                
+                                    <div class="form-group">
+                                    <button class="btn btn-outline-danger btn-sm btn-block" onclick="window.location='thankyou.html'">COMPLETE PAYMENT</button>
+                                    </div>
+                
+                                </div>
+                                </div>
+                            </div>
+                
+                            </div>
+                        </div>
+                        <!-- </form> -->
+                        </div>
+                    </div>
+                </div>
+        
+                <!--Page Content End-->
+<!-- Benefits -->
+
+<div class="benefit">
+    <div class="container">
+        <div class="row benefit_row">
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Free Shipping</h6>
+                        <p>Free shipping on orders over 100 AED.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Fast Delivery</h6>
+                        <p>Your order will reach you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>45-Day Return</h6>
+                        <p>You can return your product within 45 days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Open Every Day</h6>
+                        <p>08:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Bülten -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+						<h4>Newsletter</h4>
+						<p>Subscribe to our newsletter and get 20% off your first purchase.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+							<input id="newsletter_email" type="email" placeholder="Email" required="required" data-error="Valid email is required.">
+							<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Altbilgi -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer_nav_container">
+					<div class="cr">© Copyright 2025. Made by Awaiz Ahmed <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="#"></a>  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

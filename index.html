@@ -1,162 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
-integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<title>Awaiz Clothing</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/allResponsive.css">   
+<link rel="stylesheet" type="text/css" href="styles/slider.css">   
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
+<div class="super_container">
+
+	<header class="header trans_300" style="height: 0;">
+		<div class="main_nav_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-right">
+						<div class="logo_container">
+							<a href="index.html" style="color:white">Awaiz<span>Clothing</span></a>
+						</div>
+						<nav class="navbar">
+							<ul class="navbar_menu" style="margin-top: -15px;">
+								<li><a href="index.html" style="color:white; font-size: 20px; font-family:Cormorant Garamond, Georgia, serif;">HOME</a></li>
+								<li><a href="categories.html" style="color:white; font-size: 20px; font-family:Cormorant Garamond, Georgia, serif;">SHOP</a></li>
+								<li><a href="contact.html" style="color:white; font-size: 20px; font-family:Cormorant Garamond, Georgia, serif;">CONTACT</a></li>
+							</ul>
+							<ul class="navbar_user" style="margin-top: -15px;">
+								<li><a href="#"><i class="fa fa-search" style="color:white" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-user" style="color:white" aria-hidden="true"></i></a></li>
+								<li class="checkout">
+									<a href="card.html">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<span id="checkout_items" class="checkout_items"></span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main_slider">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image:url(images/example3.jpg)">
+					<div class="swiper-slide">
+						<section class="showcase">
+							<div class="video-container">
+								<a href="categories.html">
+								<video src="videos/main_page_slider_video.mp4" autoplay muted loop></video>
+								</a>
+							</div>
+							<div class="content">
+								<br><br><br><br>
+								<h6 style="color:white">  <a href="index.html" style="color:white; font-size:18px; font-family:Cormorant Garamond, Georgia, serif;"><small>Fall / Winter Collection - 2025</small></a></h6>
+								<h1 style="color:white"><a href="categories.html" style="color:white; font-size: 100px; font-family:Cormorant Garamond, Georgia, serif;">NEW SEASON</a></h1>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background-image:url(images/example3.jpg)"></div>
+				<div class="swiper-slide" style="background-image:url(images/example1.jpg)"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-scrollbar"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next" style="color:#fe4c50"></div>
+			<div class="swiper-button-prev" style="color:#fe4c50"></div>
+		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 1,
+				spaceBetween: 1,
+				autoplay: {
+					delay: 24000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				scrollbar: {
+					el: '.swiper-scrollbar',
+					hide: true,
+				},
+			});
+		</script>
+	</div>
+</div>
+
+	<div class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="banner_item align-items-center" style="background-image:url(images/banner_1.jpg)">
+						<div class="banner_category">
+							<a href="categories.html">WOMENS</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="banner_item align-items-center" style="background-image:url(images/banner_2.jpg)">
+						<div class="banner_category">
+							<a href="aksCategories.html">BAGS</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="banner_item align-items-center" style="background-image:url(images/banner_3.jpg)">
+						<div class="banner_category">
+							<a href="manCategories.html">MENS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NEW ARRIVALS -->
+
+	<div class="new_arrivals">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title new_arrivals_title">
+						<h2>NEW ARRIVALS</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col text-center">
+					<div class="new_arrivals_sorting">
+						<ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">ALL</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">WOMEN</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">ACCESSORIES</li>
+							<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">MEN</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+
+						<!-- Product 1 -->
+
+						<div class="product-item men">
+							<div class="product discount product_filter">
+								<div class="product_image">
+									<img src="images/product_1.png" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-20 AED</span></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Purple Hoodie</a></h6>
+									<div class="product_price">110 AED<span>130 AED</span></div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Product 2 -->
+
+						<div class="product-item women">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_2.png" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Green & Orange Handbag</a></h6>
+									<div class="product_price">90 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Product 3 -->
+
+						<div class="product-item women">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_3.png" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Yellow Fluffy Sweater</a></h6>
+									<div class="product_price">100 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Product 4 -->
+
+						<div class="product-item accessories">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_4.png" alt="">
+								</div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Green Sports Bag</a></h6>
+									<div class="product_price">150 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+
+						<!-- Ürün 5 -->
+
+						<div class="product-item women men">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_5.png" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Light Brown Shoes</a></h6>
+									<div class="product_price">180 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Ürün 6 -->
+
+						<div class="product-item accessories">
+							<div class="product discount product_filter">
+								<div class="product_image">
+									<img src="images/product_6.png" alt="">
+								</div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-40 AED</span></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="#single.html">Black SunGlas</a></h6>
+									<div class="product_price">60 AED<span>100 AED</span></div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Ürün 7 -->
+
+						<div class="product-item women">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_7.png" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Dark Orange Sweater</a></h6>
+									<div class="product_price">120 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Ürün 8 -->
+
+						<div class="product-item accessories">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_8.png" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Brown Wallet</a></h6>
+									<div class="product_price">80 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Ürün 9 -->
+
+						<div class="product-item men">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_9.png" alt="">
+								</div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="favorite favorite_left"></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Orange Coat</a></h6>
+									<div class="product_price">110 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+
+						<!-- Ürün 10 -->
+
+						<div class="product-item men">
+							<div class="product product_filter">
+								<div class="product_image">
+									<img src="images/product_10.png" alt="">
+								</div>
+								<div class="favorite"></div>
+								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>New</span></div>
+								<div class="product_info">
+									<h6 class="product_name"><a href="single.html">Green T-Shirt</a></h6>
+									<div class="product_price">100 AED</div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button"><a href="single.html">Buy Now</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- HER SAYFAYA GEREKLİ!!!!!! -->
+<!-- Benefits -->
+
+<div class="benefit">
     <div class="container">
-        <div class="wave">
-            <img src="bg.png" alt="">
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Where to buy</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-            <img src="logo.png" alt="">
-        </nav>
-
-        <div class="main-content">
-
-            <div class="image-tic">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img3.png" alt=""></div>    
-                    </div> 
+        <div class="row benefit_row">
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Free Shipping</h6>
+                        <p>Free shipping on orders over 100 AED.</p>
+                    </div>
                 </div>
             </div>
-            <div class="main-text">
-                <h1>Tic Tac</h1>
-                <p>Tic Tac® - Refresh the moment and unleash your creativity.</p>
-                <button>Swipe to checkout new flavors</button>
-            </div>
-        </div>
-
-        <div class="right">
-            <div class="box">
-                <div class="image">
-                    <img src="img4.png" alt="">
-                </div>
-                <div class="inner-box">
-                    <h3>Breath Freshening</h3>
-                    <p>Tic Tac's flavors help freshen breath quickly.</p>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Fast Delivery</h6>
+                        <p>Your order will reach you as soon as possible.</p>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="image">
-                    <img src="img5.png" alt="">
-                </div>
-                <div class="inner-box">
-                    <h3>Variety</h3>
-                    <p>Offers a range of flavors for diverse taste preferences.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="img6.png" alt="">
-                </div>
-                <div class="inner-box">
-                    <h3>Convenience</h3>
-                    <p>Portable and pocket-sized for on-the-go refreshment.</p>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>45-Day Return</h6>
+                        <p>You can return your product within 45 days.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="social-links">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="far fa-envelope"></i>
+            <div class="col-lg-3 benefit_col">
+                <div class="benefit_item d-flex flex-row align-items-center">
+                    <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="benefit_content">
+                        <h6>Open Every Day</h6>
+                        <p>08:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-        });
-      </script>
+</div>
 
-  <section class="footer__section">
-    <div class="footer__container">
-      <div class="footer__logo">
-          <img src="logo.png" alt="tic_logo" class="tic__footer__logo">
-      </div>
+	<!-- Bülten -->
 
-      <div class="footer__description">
-        <div class="description__container">
-          <ul>
-            <li><span style="color:black">ABOUT TIC TAC</span></li>
-            <li>Who we are</li>
-            <li>Blog</li>
-            <li>Work with us</li>
-            <li>Investor relations</li>
-
-            <li>Contact Us</li>
-          </ul>
-        </div>
-
-        <div class="description__container">
-          <ul>
-            <li><span style="color:black">TICTACVERSE</span></li>
-            <li>Tic Tac</li>
-            <li>Tic Tac Sprite</li>
-            <li>Take a Ride on Tic Tac</li>
-            <li>HyperTac</li>
-            <li>TicTacland</li>
-          </ul>
-        </div>
-
-        <div class="description__container">
-          <ul>
-            <li><span style="color:black">FOR SHOPS</span></li>
-            <li>Partner With Us</li>
-            <li>Apps For You</li>
-            <li>FOR ENTERPRISES</li>
-            <li>Tic Tac For Enterprise</li>
-           <li>Career</li>
-          </ul>
-        </div>
-
-        <div class="description__container">
-          <ul>
-            <li><span style="color:black">LEARN MORE</span></li>
-            <li>Privacy</li>
-            <li>Security</li>
-            <li>Terms</li>
-            <li>Legal Aspects</li>
-            <li>About Our Ads</li>
-          </ul>
-        </div>
-    
-
-
-       </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-
-
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+						<h4>Newsletter</h4>
+						<p>Subscribe to our newsletter and get 20% off your first purchase.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+							<input id="newsletter_email" type="email" placeholder="Email" required="required" data-error="Valid email is required.">
+							<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Altbilgi -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer_nav_container">
+					<div class="cr">© Copyright 2025. Made by Awaiz Ahmed <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="#"></a>  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Bütün sayfalara gerekli olan bittii-->
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>
